@@ -58,6 +58,12 @@ footer {
       var b = Math.floor(second / 59 * 255);
 
       document.body.style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+
+      if ((hour > 20) && (minute > 45)) {
+        document.body.style.color="black";
+      } else {
+        document.body.style.color="white";
+      }
     };
 
     window.setInterval(update, 1000);
